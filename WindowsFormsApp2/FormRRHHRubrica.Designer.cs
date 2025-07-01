@@ -219,7 +219,7 @@
             this.Controls.Add(this.btnRegistrarRubrica);
             this.Controls.Add(this.label1);
             this.Name = "FormRRHHRubrica";
-            this.Text = "FrmRecursosHumanos6";
+            this.Text = "Rúbricas";
             this.ResumeLayout(false);
             this.PerformLayout();
 

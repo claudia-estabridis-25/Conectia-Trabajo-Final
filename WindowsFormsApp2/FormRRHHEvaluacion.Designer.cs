@@ -175,7 +175,7 @@
             this.tbCodigoEvaluacion.Size = new System.Drawing.Size(349, 22);
             this.tbCodigoEvaluacion.TabIndex = 63;
             // 
-            // FrmRecursosHumanos7
+            // FormRRHHEvaluacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -194,8 +194,8 @@
             this.Controls.Add(this.dgResumenEvaluacion);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "FrmRecursosHumanos7";
-            this.Text = "FrmRecursosHumanos7";
+            this.Name = "FormRRHHEvaluacion";
+            this.Text = "Evaluaciones";
             ((System.ComponentModel.ISupportInitialize)(this.dgResumenEvaluacion)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

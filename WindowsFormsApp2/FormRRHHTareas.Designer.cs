@@ -194,7 +194,7 @@
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.label1);
             this.Name = "FormRRHHTareas";
-            this.Text = "FrmRecursosHumanos5";
+            this.Text = "Tareas";
             ((System.ComponentModel.ISupportInitialize)(this.dgProyectos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

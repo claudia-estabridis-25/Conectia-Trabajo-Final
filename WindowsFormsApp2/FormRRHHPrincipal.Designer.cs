@@ -380,7 +380,7 @@
             this.Controls.Add(this.tbCodigoEmpleado);
             this.Controls.Add(this.label1);
             this.Name = "FormRRHHPrincipal";
-            this.Text = "s";
+            this.Text = "Monitoreo RR HH";
             ((System.ComponentModel.ISupportInitialize)(this.dgEmpleados)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

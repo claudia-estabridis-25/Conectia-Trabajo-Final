@@ -137,11 +137,11 @@
     <Compile Include="FormRegistroEmpleado.Designer.cs">
       <DependentUpon>FormRegistroEmpleado.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormReporteRRHH.cs">
+    <Compile Include="FormRRHHReporte.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormReporteRRHH.Designer.cs">
-      <DependentUpon>FormReporteRRHH.cs</DependentUpon>
+    <Compile Include="FormRRHHReporte.Designer.cs">
+      <DependentUpon>FormRRHHReporte.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmInventario.cs">
       <SubType>Form</SubType>
@@ -238,8 +238,8 @@
     <EmbeddedResource Include="FormRegistroEmpleado.resx">
       <DependentUpon>FormRegistroEmpleado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormReporteRRHH.resx">
-      <DependentUpon>FormReporteRRHH.cs</DependentUpon>
+    <EmbeddedResource Include="FormRRHHReporte.resx">
+      <DependentUpon>FormRRHHReporte.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmInventario.resx">
       <DependentUpon>FrmInventario.cs</DependentUpon>

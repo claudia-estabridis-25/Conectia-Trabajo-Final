@@ -16,17 +16,17 @@ namespace WindowsFormsApp2
         {
             InitializeComponent();
         }
-              
-        private void btnVerEvaluaciones_Click(object sender, EventArgs e)
-        {
-            FormRRHHRubrica form = new FormRRHHRubrica();
-            form.Show();
-            this.Hide();
-        }
 
         private void btnVerReportes_Click(object sender, EventArgs e)
         {
-            FormReporteRRHH form = new FormReporteRRHH();
+            FormRRHHReporte form = new FormRRHHReporte();
+            form.Show();
+            this.Hide();
+        }        
+
+        private void btnVerTareas_Click(object sender, EventArgs e)
+        {
+            FormRRHHTareas form = new FormRRHHTareas();
             form.Show();
             this.Hide();
         }

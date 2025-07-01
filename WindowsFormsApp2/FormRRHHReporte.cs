@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
-    public partial class FormReporteRRHH: Form
+    public partial class FormRRHHReporte: Form
     {
-        public FormReporteRRHH()
+        public FormRRHHReporte()
         {
             InitializeComponent();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
