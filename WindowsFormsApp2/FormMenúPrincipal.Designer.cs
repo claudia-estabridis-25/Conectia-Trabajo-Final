@@ -54,7 +54,7 @@
             this.btnMonitoreoRRHH.TabIndex = 14;
             this.btnMonitoreoRRHH.Text = "Monitoreo de Recursos Humanos";
             this.btnMonitoreoRRHH.UseVisualStyleBackColor = true;
-            this.btnMonitoreoRRHH.Click += new System.EventHandler(this.button1_Click);
+            this.btnMonitoreoRRHH.Click += new System.EventHandler(this.btnMonitoreoRRHH_Click);
             // 
             // btnControlFinanciero
             // 
@@ -186,10 +186,10 @@
             // btnCerrarSesión
             // 
             this.btnCerrarSesión.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrarSesión.Location = new System.Drawing.Point(541, 540);
+            this.btnCerrarSesión.Location = new System.Drawing.Point(541, 547);
             this.btnCerrarSesión.Margin = new System.Windows.Forms.Padding(4);
             this.btnCerrarSesión.Name = "btnCerrarSesión";
-            this.btnCerrarSesión.Size = new System.Drawing.Size(164, 63);
+            this.btnCerrarSesión.Size = new System.Drawing.Size(164, 56);
             this.btnCerrarSesión.TabIndex = 31;
             this.btnCerrarSesión.Text = "Cerrar Sesión";
             this.btnCerrarSesión.UseVisualStyleBackColor = true;

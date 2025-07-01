@@ -17,40 +17,10 @@ namespace WindowsFormsApp2
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void btnMonitoreoRRHH_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            FrmRecursosHumanos1 obj = new FrmRecursosHumanos1();
+            FormRRHHPrincipal obj = new FormRRHHPrincipal();
             obj.Show();
-            this.Hide();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            FrmInventario obj = new FrmInventario();
-            obj.Show();
-        }
-
-        private void btnControlFinanciero_Click(object sender, EventArgs e)
-        {
-            FormFinanzas1 obj = new FormFinanzas1();
-            obj.Show();
-            this.Hide();
-        }
-
-        private void btnSalir_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void btnCerrarSesión_Click(object sender, EventArgs e)
-        {
-            FormIniciarSesion form = new FormIniciarSesion();
-            form.Show();
             this.Hide();
         }
 
@@ -60,5 +30,19 @@ namespace WindowsFormsApp2
             form.Show();
             this.Hide();
         }
+
+        private void btnControlFinanciero_Click(object sender, EventArgs e)
+        {
+            FormFinanzas1 obj = new FormFinanzas1();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void btnCerrarSesión_Click(object sender, EventArgs e)
+        {
+            FormIniciarSesion form = new FormIniciarSesion();
+            form.Show();
+            this.Hide();
+        }        
     }
 }

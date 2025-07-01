@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp2
 {
-    partial class FrmRecursosHumanos2
+    partial class FormRRHHProyectos
     {
         /// <summary>
         /// Required designer variable.
@@ -42,16 +42,16 @@
             this.dtpFechaInicio = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.dtpFechaFin = new System.Windows.Forms.DateTimePicker();
-            this.btnVerAsignarProyectos = new System.Windows.Forms.Button();
-            this.btnVerEvaluaciones = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.lblTotalProyectos = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
+            this.btnVerTareas = new System.Windows.Forms.Button();
+            this.btnVerReportes = new System.Windows.Forms.Button();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgProyectos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,7 +73,7 @@
             this.dgProyectos.Margin = new System.Windows.Forms.Padding(4);
             this.dgProyectos.Name = "dgProyectos";
             this.dgProyectos.RowHeadersWidth = 51;
-            this.dgProyectos.Size = new System.Drawing.Size(720, 483);
+            this.dgProyectos.Size = new System.Drawing.Size(720, 496);
             this.dgProyectos.TabIndex = 9;
             // 
             // label2
@@ -86,7 +86,6 @@
             this.label2.Size = new System.Drawing.Size(95, 22);
             this.label2.TabIndex = 10;
             this.label2.Text = "Proyectos:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label12
             // 
@@ -102,7 +101,7 @@
             // btnRegistrarProyecto
             // 
             this.btnRegistrarProyecto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrarProyecto.Location = new System.Drawing.Point(175, 423);
+            this.btnRegistrarProyecto.Location = new System.Drawing.Point(214, 417);
             this.btnRegistrarProyecto.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegistrarProyecto.Name = "btnRegistrarProyecto";
             this.btnRegistrarProyecto.Size = new System.Drawing.Size(175, 54);
@@ -190,30 +189,6 @@
             this.dtpFechaFin.Size = new System.Drawing.Size(288, 22);
             this.dtpFechaFin.TabIndex = 29;
             // 
-            // btnVerAsignarProyectos
-            // 
-            this.btnVerAsignarProyectos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVerAsignarProyectos.Location = new System.Drawing.Point(35, 558);
-            this.btnVerAsignarProyectos.Margin = new System.Windows.Forms.Padding(4);
-            this.btnVerAsignarProyectos.Name = "btnVerAsignarProyectos";
-            this.btnVerAsignarProyectos.Size = new System.Drawing.Size(196, 54);
-            this.btnVerAsignarProyectos.TabIndex = 31;
-            this.btnVerAsignarProyectos.Text = "Ver Asignar proyectos";
-            this.btnVerAsignarProyectos.UseVisualStyleBackColor = true;
-            this.btnVerAsignarProyectos.Click += new System.EventHandler(this.btnVerAsignarProyectos_Click);
-            // 
-            // btnVerEvaluaciones
-            // 
-            this.btnVerEvaluaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVerEvaluaciones.Location = new System.Drawing.Point(40, 698);
-            this.btnVerEvaluaciones.Margin = new System.Windows.Forms.Padding(4);
-            this.btnVerEvaluaciones.Name = "btnVerEvaluaciones";
-            this.btnVerEvaluaciones.Size = new System.Drawing.Size(168, 54);
-            this.btnVerEvaluaciones.TabIndex = 33;
-            this.btnVerEvaluaciones.Text = "Ver Evaluaciones";
-            this.btnVerEvaluaciones.UseVisualStyleBackColor = true;
-            this.btnVerEvaluaciones.Click += new System.EventHandler(this.btnVerEvaluaciones_Click);
-            // 
             // label17
             // 
             this.label17.AutoSize = true;
@@ -230,7 +205,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(1034, 656);
+            this.label8.Location = new System.Drawing.Point(563, 683);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(152, 20);
@@ -241,39 +216,17 @@
             // 
             this.lblTotalProyectos.AutoSize = true;
             this.lblTotalProyectos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalProyectos.Location = new System.Drawing.Point(1204, 656);
+            this.lblTotalProyectos.Location = new System.Drawing.Point(733, 683);
             this.lblTotalProyectos.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTotalProyectos.Name = "lblTotalProyectos";
             this.lblTotalProyectos.Size = new System.Drawing.Size(18, 20);
             this.lblTotalProyectos.TabIndex = 56;
             this.lblTotalProyectos.Text = "0";
             // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(31, 518);
-            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(379, 22);
-            this.label16.TabIndex = 58;
-            this.label16.Text = "Clic aquí para asignar proyectos a empleados:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(36, 654);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(325, 22);
-            this.label9.TabIndex = 59;
-            this.label9.Text = "Clic aquí para evaluar a tus empleados:";
-            // 
             // btnSalir
             // 
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(1159, 709);
+            this.btnSalir.Location = new System.Drawing.Point(1168, 728);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(128, 43);
@@ -285,7 +238,7 @@
             // btnEliminar
             // 
             this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(759, 665);
+            this.btnEliminar.Location = new System.Drawing.Point(94, 502);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(158, 48);
@@ -296,7 +249,7 @@
             // btnEditar
             // 
             this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.Location = new System.Drawing.Point(567, 665);
+            this.btnEditar.Location = new System.Drawing.Point(328, 502);
             this.btnEditar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(158, 48);
@@ -304,22 +257,67 @@
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
             // 
-            // FrmRecursosHumanos2
+            // btnVerTareas
+            // 
+            this.btnVerTareas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerTareas.Location = new System.Drawing.Point(67, 611);
+            this.btnVerTareas.Margin = new System.Windows.Forms.Padding(4);
+            this.btnVerTareas.Name = "btnVerTareas";
+            this.btnVerTareas.Size = new System.Drawing.Size(162, 56);
+            this.btnVerTareas.TabIndex = 63;
+            this.btnVerTareas.Text = "Ver Tareas";
+            this.btnVerTareas.UseVisualStyleBackColor = true;
+            // 
+            // btnVerReportes
+            // 
+            this.btnVerReportes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerReportes.Location = new System.Drawing.Point(67, 708);
+            this.btnVerReportes.Margin = new System.Windows.Forms.Padding(4);
+            this.btnVerReportes.Name = "btnVerReportes";
+            this.btnVerReportes.Size = new System.Drawing.Size(166, 56);
+            this.btnVerReportes.TabIndex = 62;
+            this.btnVerReportes.Text = "Ver Reportes";
+            this.btnVerReportes.UseVisualStyleBackColor = true;
+            this.btnVerReportes.Click += new System.EventHandler(this.btnVerReportes_Click);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(63, 585);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(287, 22);
+            this.label16.TabIndex = 64;
+            this.label16.Text = "Clic aquí para gesitonar las tareas:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(63, 681);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(308, 22);
+            this.label9.TabIndex = 65;
+            this.label9.Text = "Clic aquí para acceder a los reportes:";
+            // 
+            // FormRRHHProyectos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1318, 775);
-            this.Controls.Add(this.btnEliminar);
-            this.Controls.Add(this.btnEditar);
+            this.ClientSize = new System.Drawing.Size(1318, 784);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label16);
+            this.Controls.Add(this.btnVerTareas);
+            this.Controls.Add(this.btnVerReportes);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.lblTotalProyectos);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.btnVerEvaluaciones);
-            this.Controls.Add(this.btnVerAsignarProyectos);
             this.Controls.Add(this.dtpFechaFin);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.dtpFechaInicio);
@@ -335,7 +333,7 @@
             this.Controls.Add(this.dgProyectos);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "FrmRecursosHumanos2";
+            this.Name = "FormRRHHProyectos";
             this.Text = "FrmRecursosHumanos";
             ((System.ComponentModel.ISupportInitialize)(this.dgProyectos)).EndInit();
             this.ResumeLayout(false);
@@ -361,15 +359,15 @@
         private System.Windows.Forms.DateTimePicker dtpFechaInicio;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DateTimePicker dtpFechaFin;
-        private System.Windows.Forms.Button btnVerAsignarProyectos;
-        private System.Windows.Forms.Button btnVerEvaluaciones;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lblTotalProyectos;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Button btnVerTareas;
+        private System.Windows.Forms.Button btnVerReportes;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label9;
     }
 }

@@ -10,30 +10,30 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
-    public partial class FrmRecursosHumanos3: Form
+    public partial class FormRRHHPrincipal: Form
     {
-        public FrmRecursosHumanos3()
+        public FormRRHHPrincipal()
         {
             InitializeComponent();
+        }        
+
+        private void btnVerProyectos_Click(object sender, EventArgs e)
+        {
+            FormRRHHProyectos form = new FormRRHHProyectos();
+            form.Show();
+            this.Hide();
+        }
+                
+        private void btnVerRubricas_Click(object sender, EventArgs e)
+        {
+            FormRRHHRubrica form = new FormRRHHRubrica();
+            form.Show();
+            this.Hide();
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            FrmRecursosHumanos2 form = new FrmRecursosHumanos2();
-            form.Show();
-            this.Hide();
-        }
-
-        private void btnCalendario_Click(object sender, EventArgs e)
-        {
-            FrmRecursosHumanos4 form = new FrmRecursosHumanos4();
-            form.Show();
-            this.Hide();
-        }
-
-        private void btnVerTareas_Click(object sender, EventArgs e)
-        {
-            FrmRecursosHumanos5 form = new FrmRecursosHumanos5();
+            FormMenúPrincipal form = new FormMenúPrincipal();
             form.Show();
             this.Hide();
         }

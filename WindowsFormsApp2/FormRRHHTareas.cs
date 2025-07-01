@@ -10,18 +10,16 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
-    public partial class FrmRecursosHumanos4: Form
+    public partial class FormRRHHTareas: Form
     {
-        public FrmRecursosHumanos4()
+        public FormRRHHTareas()
         {
             InitializeComponent();
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            FrmRecursosHumanos3 form = new FrmRecursosHumanos3();
-            form.Show();
-            this.Hide();
+            this.Close();
         }
     }
 }

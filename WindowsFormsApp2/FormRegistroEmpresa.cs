@@ -10,18 +10,17 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
-    public partial class FormIniciarSesion: Form
+    public partial class FormRegistroEmpresa : Form
     {
-        public FormIniciarSesion()
+        public FormRegistroEmpresa()
         {
             InitializeComponent();
         }
 
-        private void btnIniciarSesion_Click(object sender, EventArgs e)
+        private void btnRegistrarEmpleado_Click(object sender, EventArgs e)
         {
-            FormMenúPrincipal form = new FormMenúPrincipal();
+            FormRegistroEmpleado form = new FormRegistroEmpleado();
             form.Show();
-            this.Hide();
         }
 
         private void btnSalir_Click(object sender, EventArgs e)

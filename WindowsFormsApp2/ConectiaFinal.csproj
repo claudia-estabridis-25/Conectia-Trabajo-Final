@@ -83,6 +83,12 @@
     <Compile Include="FormFinanzas6.Designer.cs">
       <DependentUpon>FormFinanzas6.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormIniciarSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIniciarSesion.Designer.cs">
+      <DependentUpon>FormIniciarSesion.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormInventario2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,11 +113,11 @@
     <Compile Include="FormInventario1.Designer.cs">
       <DependentUpon>FormInventario1.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormRegistro.cs">
+    <Compile Include="FormRegistroEmpresa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormRegistro.Designer.cs">
-      <DependentUpon>FormRegistro.cs</DependentUpon>
+    <Compile Include="FormRegistroEmpresa.Designer.cs">
+      <DependentUpon>FormRegistroEmpresa.cs</DependentUpon>
     </Compile>
     <Compile Include="FormMenúPrincipal.cs">
       <SubType>Form</SubType>
@@ -125,11 +131,17 @@
     <Compile Include="FormFinanzas1.Designer.cs">
       <DependentUpon>FormFinanzas1.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormIniciarSesion.cs">
+    <Compile Include="FormRegistroEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormIniciarSesion.Designer.cs">
-      <DependentUpon>FormIniciarSesion.cs</DependentUpon>
+    <Compile Include="FormRegistroEmpleado.Designer.cs">
+      <DependentUpon>FormRegistroEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReporteRRHH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReporteRRHH.Designer.cs">
+      <DependentUpon>FormReporteRRHH.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmInventario.cs">
       <SubType>Form</SubType>
@@ -137,47 +149,35 @@
     <Compile Include="FrmInventario.Designer.cs">
       <DependentUpon>FrmInventario.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmRecursosHumanos1.cs">
+    <Compile Include="FormRRHHPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmRecursosHumanos1.Designer.cs">
-      <DependentUpon>FrmRecursosHumanos1.cs</DependentUpon>
+    <Compile Include="FormRRHHPrincipal.Designer.cs">
+      <DependentUpon>FormRRHHPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmRecursosHumanos2.cs">
+    <Compile Include="FormRRHHProyectos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmRecursosHumanos2.Designer.cs">
-      <DependentUpon>FrmRecursosHumanos2.cs</DependentUpon>
+    <Compile Include="FormRRHHProyectos.Designer.cs">
+      <DependentUpon>FormRRHHProyectos.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmRecursosHumanos3.cs">
+    <Compile Include="FormRRHHTareas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmRecursosHumanos3.Designer.cs">
-      <DependentUpon>FrmRecursosHumanos3.cs</DependentUpon>
+    <Compile Include="FormRRHHTareas.Designer.cs">
+      <DependentUpon>FormRRHHTareas.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmRecursosHumanos4.cs">
+    <Compile Include="FormRRHHRubrica.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmRecursosHumanos4.Designer.cs">
-      <DependentUpon>FrmRecursosHumanos4.cs</DependentUpon>
+    <Compile Include="FormRRHHRubrica.Designer.cs">
+      <DependentUpon>FormRRHHRubrica.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmRecursosHumanos5.cs">
+    <Compile Include="FormRRHHEvaluacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmRecursosHumanos5.Designer.cs">
-      <DependentUpon>FrmRecursosHumanos5.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmRecursosHumanos6.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmRecursosHumanos6.Designer.cs">
-      <DependentUpon>FrmRecursosHumanos6.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmRecursosHumanos7.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmRecursosHumanos7.Designer.cs">
-      <DependentUpon>FrmRecursosHumanos7.cs</DependentUpon>
+    <Compile Include="FormRRHHEvaluacion.Designer.cs">
+      <DependentUpon>FormRRHHEvaluacion.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -211,6 +211,9 @@
     <EmbeddedResource Include="FormFinanzas6.resx">
       <DependentUpon>FormFinanzas6.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormIniciarSesion.resx">
+      <DependentUpon>FormIniciarSesion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormInventario2.resx">
       <DependentUpon>FormInventario2.cs</DependentUpon>
     </EmbeddedResource>
@@ -223,8 +226,8 @@
     <EmbeddedResource Include="FormInventario1.resx">
       <DependentUpon>FormInventario1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormRegistro.resx">
-      <DependentUpon>FormRegistro.cs</DependentUpon>
+    <EmbeddedResource Include="FormRegistroEmpresa.resx">
+      <DependentUpon>FormRegistroEmpresa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenúPrincipal.resx">
       <DependentUpon>FormMenúPrincipal.cs</DependentUpon>
@@ -232,32 +235,29 @@
     <EmbeddedResource Include="FormFinanzas1.resx">
       <DependentUpon>FormFinanzas1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormIniciarSesion.resx">
-      <DependentUpon>FormIniciarSesion.cs</DependentUpon>
+    <EmbeddedResource Include="FormRegistroEmpleado.resx">
+      <DependentUpon>FormRegistroEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReporteRRHH.resx">
+      <DependentUpon>FormReporteRRHH.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmInventario.resx">
       <DependentUpon>FrmInventario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmRecursosHumanos1.resx">
-      <DependentUpon>FrmRecursosHumanos1.cs</DependentUpon>
+    <EmbeddedResource Include="FormRRHHPrincipal.resx">
+      <DependentUpon>FormRRHHPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmRecursosHumanos2.resx">
-      <DependentUpon>FrmRecursosHumanos2.cs</DependentUpon>
+    <EmbeddedResource Include="FormRRHHProyectos.resx">
+      <DependentUpon>FormRRHHProyectos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmRecursosHumanos3.resx">
-      <DependentUpon>FrmRecursosHumanos3.cs</DependentUpon>
+    <EmbeddedResource Include="FormRRHHTareas.resx">
+      <DependentUpon>FormRRHHTareas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmRecursosHumanos4.resx">
-      <DependentUpon>FrmRecursosHumanos4.cs</DependentUpon>
+    <EmbeddedResource Include="FormRRHHRubrica.resx">
+      <DependentUpon>FormRRHHRubrica.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmRecursosHumanos5.resx">
-      <DependentUpon>FrmRecursosHumanos5.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmRecursosHumanos6.resx">
-      <DependentUpon>FrmRecursosHumanos6.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmRecursosHumanos7.resx">
-      <DependentUpon>FrmRecursosHumanos7.cs</DependentUpon>
+    <EmbeddedResource Include="FormRRHHEvaluacion.resx">
+      <DependentUpon>FormRRHHEvaluacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

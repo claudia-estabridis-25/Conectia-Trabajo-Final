@@ -10,23 +10,23 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
-    public partial class FrmRecursosHumanos1: Form
+    public partial class FormRRHHRubrica: Form
     {
-        public FrmRecursosHumanos1()
+        public FormRRHHRubrica()
         {
             InitializeComponent();
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            FormMenúPrincipal form = new FormMenúPrincipal();
+            FormRRHHProyectos form = new FormRRHHProyectos();
             form.Show();
             this.Hide();
         }
 
-        private void btnVerProyectos_Click(object sender, EventArgs e)
+        private void btnVerEvaluacion_Click(object sender, EventArgs e)
         {
-            FrmRecursosHumanos2 form = new FrmRecursosHumanos2();
+            FormRRHHEvaluacion form = new FormRRHHEvaluacion();
             form.Show();
             this.Hide();
         }

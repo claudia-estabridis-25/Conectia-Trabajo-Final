@@ -10,16 +10,21 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
-    public partial class FrmRecursosHumanos7: Form
+    public partial class FormRRHHEvaluacion: Form
     {
-        public FrmRecursosHumanos7()
+        public FormRRHHEvaluacion()
         {
             InitializeComponent();
+        }
+                
+        private void btnRegistrarEvaluacion_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            FrmRecursosHumanos6 form = new FrmRecursosHumanos6();
+            FormRRHHRubrica form = new FormRRHHRubrica();
             form.Show();
             this.Hide();
         }

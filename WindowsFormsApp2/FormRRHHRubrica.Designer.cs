@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp2
 {
-    partial class FrmRecursosHumanos6
+    partial class FormRRHHRubrica
     {
         /// <summary>
         /// Required designer variable.
@@ -176,7 +176,7 @@
             // btnVerEvaluacion
             // 
             this.btnVerEvaluacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVerEvaluacion.Location = new System.Drawing.Point(25, 603);
+            this.btnVerEvaluacion.Location = new System.Drawing.Point(25, 614);
             this.btnVerEvaluacion.Margin = new System.Windows.Forms.Padding(4);
             this.btnVerEvaluacion.Name = "btnVerEvaluacion";
             this.btnVerEvaluacion.Size = new System.Drawing.Size(168, 54);
@@ -188,7 +188,7 @@
             // btnSalir
             // 
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(445, 614);
+            this.btnSalir.Location = new System.Drawing.Point(502, 620);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(128, 43);
@@ -197,7 +197,7 @@
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // FrmRecursosHumanos6
+            // FormRRHHRubrica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -218,7 +218,7 @@
             this.Controls.Add(this.label13);
             this.Controls.Add(this.btnRegistrarRubrica);
             this.Controls.Add(this.label1);
-            this.Name = "FrmRecursosHumanos6";
+            this.Name = "FormRRHHRubrica";
             this.Text = "FrmRecursosHumanos6";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp2
 {
-    partial class FrmRecursosHumanos7
+    partial class FormRRHHEvaluacion
     {
         /// <summary>
         /// Required designer variable.
@@ -30,9 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.dgResumenEvaluacion = new System.Windows.Forms.DataGridView();
-            this.cbSeleccionarColaborador = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.tbPuntajes = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -41,6 +39,8 @@
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnRegistrarEvaluacion = new System.Windows.Forms.Button();
             this.btnDescargarEvaluacion = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.tbCodigoEvaluacion = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgResumenEvaluacion)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,17 +66,6 @@
             this.label2.TabIndex = 37;
             this.label2.Text = "Evaluación de Desempeño";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(101, 152);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(195, 20);
-            this.label3.TabIndex = 39;
-            this.label3.Text = "Seleccionar colaborador:";
-            // 
             // dgResumenEvaluacion
             // 
             this.dgResumenEvaluacion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -87,20 +76,11 @@
             this.dgResumenEvaluacion.Size = new System.Drawing.Size(640, 299);
             this.dgResumenEvaluacion.TabIndex = 38;
             // 
-            // cbSeleccionarColaborador
-            // 
-            this.cbSeleccionarColaborador.FormattingEnabled = true;
-            this.cbSeleccionarColaborador.Location = new System.Drawing.Point(315, 152);
-            this.cbSeleccionarColaborador.Margin = new System.Windows.Forms.Padding(4);
-            this.cbSeleccionarColaborador.Name = "cbSeleccionarColaborador";
-            this.cbSeleccionarColaborador.Size = new System.Drawing.Size(349, 24);
-            this.cbSeleccionarColaborador.TabIndex = 40;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(36, 198);
+            this.label4.Location = new System.Drawing.Point(35, 183);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(263, 20);
@@ -109,7 +89,7 @@
             // 
             // tbPuntajes
             // 
-            this.tbPuntajes.Location = new System.Drawing.Point(315, 197);
+            this.tbPuntajes.Location = new System.Drawing.Point(315, 182);
             this.tbPuntajes.Name = "tbPuntajes";
             this.tbPuntajes.Size = new System.Drawing.Size(349, 22);
             this.tbPuntajes.TabIndex = 42;
@@ -118,7 +98,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(98, 246);
+            this.label5.Location = new System.Drawing.Point(98, 227);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(198, 20);
@@ -127,7 +107,7 @@
             // 
             // rtbComentarios
             // 
-            this.rtbComentarios.Location = new System.Drawing.Point(315, 246);
+            this.rtbComentarios.Location = new System.Drawing.Point(315, 227);
             this.rtbComentarios.Name = "rtbComentarios";
             this.rtbComentarios.Size = new System.Drawing.Size(349, 105);
             this.rtbComentarios.TabIndex = 44;
@@ -137,20 +117,20 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(37, 404);
+            this.label6.Location = new System.Drawing.Point(37, 402);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(124, 22);
+            this.label6.Size = new System.Drawing.Size(91, 22);
             this.label6.TabIndex = 45;
-            this.label6.Text = "Ver Resumen:";
+            this.label6.Text = "Resumen:";
             // 
             // btnSalir
             // 
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(600, 775);
+            this.btnSalir.Location = new System.Drawing.Point(600, 785);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(120, 34);
+            this.btnSalir.Size = new System.Drawing.Size(120, 39);
             this.btnSalir.TabIndex = 59;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
@@ -159,12 +139,13 @@
             // btnRegistrarEvaluacion
             // 
             this.btnRegistrarEvaluacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrarEvaluacion.Location = new System.Drawing.Point(400, 366);
+            this.btnRegistrarEvaluacion.Location = new System.Drawing.Point(397, 353);
             this.btnRegistrarEvaluacion.Name = "btnRegistrarEvaluacion";
             this.btnRegistrarEvaluacion.Size = new System.Drawing.Size(166, 47);
             this.btnRegistrarEvaluacion.TabIndex = 60;
             this.btnRegistrarEvaluacion.Text = "Registrar";
             this.btnRegistrarEvaluacion.UseVisualStyleBackColor = true;
+            this.btnRegistrarEvaluacion.Click += new System.EventHandler(this.btnRegistrarEvaluacion_Click);
             // 
             // btnDescargarEvaluacion
             // 
@@ -176,12 +157,32 @@
             this.btnDescargarEvaluacion.Text = "Descargar Evalución";
             this.btnDescargarEvaluacion.UseVisualStyleBackColor = true;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(123, 141);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(173, 20);
+            this.label3.TabIndex = 62;
+            this.label3.Text = "Código de evaluación:";
+            // 
+            // tbCodigoEvaluacion
+            // 
+            this.tbCodigoEvaluacion.Location = new System.Drawing.Point(315, 139);
+            this.tbCodigoEvaluacion.Name = "tbCodigoEvaluacion";
+            this.tbCodigoEvaluacion.Size = new System.Drawing.Size(349, 22);
+            this.tbCodigoEvaluacion.TabIndex = 63;
+            // 
             // FrmRecursosHumanos7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(733, 819);
+            this.ClientSize = new System.Drawing.Size(733, 838);
+            this.Controls.Add(this.tbCodigoEvaluacion);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.btnDescargarEvaluacion);
             this.Controls.Add(this.btnRegistrarEvaluacion);
             this.Controls.Add(this.btnSalir);
@@ -190,8 +191,6 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.tbPuntajes);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.cbSeleccionarColaborador);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.dgResumenEvaluacion);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -207,9 +206,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dgResumenEvaluacion;
-        private System.Windows.Forms.ComboBox cbSeleccionarColaborador;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox tbPuntajes;
         private System.Windows.Forms.Label label5;
@@ -218,5 +215,7 @@
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnRegistrarEvaluacion;
         private System.Windows.Forms.Button btnDescargarEvaluacion;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox tbCodigoEvaluacion;
     }
 }

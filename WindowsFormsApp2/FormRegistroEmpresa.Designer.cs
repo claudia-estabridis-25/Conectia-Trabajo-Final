@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp2
 {
-    partial class FormRegistro
+    partial class FormRegistroEmpresa
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -174,7 +174,7 @@
             this.btnSalir.TabIndex = 25;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click_1);
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnRegistrarEmpleado
             // 
@@ -186,9 +186,9 @@
             this.btnRegistrarEmpleado.TabIndex = 26;
             this.btnRegistrarEmpleado.Text = "Registrar empleado";
             this.btnRegistrarEmpleado.UseVisualStyleBackColor = true;
-            this.btnRegistrarEmpleado.Click += new System.EventHandler(this.btnIniciaSesion_Click);
+            this.btnRegistrarEmpleado.Click += new System.EventHandler(this.btnRegistrarEmpleado_Click);
             // 
-            // FormRegistro
+            // FormRegistroEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -209,7 +209,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "FormRegistro";
+            this.Name = "FormRegistroEmpresa";
             this.Text = "Conectia";
             this.ResumeLayout(false);
             this.PerformLayout();
